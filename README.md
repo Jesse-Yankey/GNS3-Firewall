@@ -58,7 +58,7 @@ route inside 192.168.80.0 255.255.255.192 192.168.0.5 1
 route inside 192.168.80.64 255.255.255.192 192.168.0.5 1
 ```
 
-## Verification Commands
+## Verification CommandsCan you help me with some documentation so i can post in my GitHub account
 
 ```bash
 ! Show NAT rules
@@ -71,12 +71,9 @@ show xlate
 show run nat
 ```
 
-## 👨‍💻 Author
+## 👨‍💻 AuthorCan you help me with some documentation so i can post in my GitHub account
 
 **Jesse Yankey**  
 📧 njyankey123@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/jesse-yankey)  
 🐙 [GitHub](https://www.github.com/Jesse-Yankey)
-
-
-Would you like me to generate the GitHub `repo structure` or even prepare a zipped project directory with a sample `.cfg` file too?
