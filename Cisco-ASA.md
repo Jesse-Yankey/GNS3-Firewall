@@ -1,15 +1,13 @@
 # Cisco ASA Firewall - PAT (Port Address Translation) Configuration
 
 ### Overview
-
 This documentation provides a step-by-step guide on configuring **Port Address Translation (PAT)** on a Cisco ASA firewall in GNS3. PAT allows multiple devices on a private network to access external networks (like the internet) using a single public IP address.
 
 ### Network Topology
-
 ```
 Inside Network (192.168.0.4/31)Firewall
         |
-    [ ASA Firewall ]
+[ ASA Firewall ]
         |
 Outside Network (DHCP Assigned IP- Public)
 ```
@@ -20,7 +18,6 @@ Outside Network (DHCP Assigned IP- Public)
 
 ## Configuration Steps
 ### Configure Interfaces
-
 ```bash
 interface GigabitEthernet0/0
  description INT-RT-1
@@ -36,29 +33,23 @@ interface GigabitEthernet0/2
 ```
 
 ### Define NAT Rules
-
-```bash
+```
 ! Create a network object for inside subnet
 object network INSIDE-NAT
  subnet 192.168.80.0 255.255.255.192
  nat (inside,outside) dynamic interface
 ```
-
 > `dynamic interface` tells the ASA to use the IP address assigned to the outside interface for PAT.
 
----
-
 ### Create a route for the internal  network (I configured a static route)
-
-```README.md
+```
 route outside 0.0.0.0 0.0.0.0 192.168.122.0 1
 route inside 192.168.80.0 255.255.255.192 192.168.0.5 1
 route inside 192.168.80.64 255.255.255.192 192.168.0.5 1
 ```
 
 ## Verification CommandsCan you help me with some documentation so i can post in my GitHub account
-
-```bash
+```
 ! Show NAT rules
 show nat
 
@@ -68,10 +59,8 @@ show xlate
 ! Show running NAT config
 show run nat
 ```
-README.md
-## 👨‍💻 AuthorCan you help me with some documentation so i can post in my GitHub account
 
 **Jesse Yankey**  
-📧 njyankey123@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/jesse-yankey)  
-🐙 [GitHub](https://www.github.com/Jesse-Yankey)
+ njyankey123@gmail.com  
+ [LinkedIn](https://www.linkedin.com/in/jesse-yankey)  
+ [GitHub](https://www.github.com/Jesse-Yankey)
