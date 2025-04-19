@@ -1,5 +1,4 @@
-# GNS3-Firewall
-## Cisco ASA Firewall - PAT (Port Address Translation) Configuration
+# Cisco ASA Firewall - PAT (Port Address Translation) Configuration
 
 ### Overview
 
@@ -20,7 +19,6 @@ Outside Network (DHCP Assigned IP- Public)
 - **Internal Subnet**: `192.168.80.0/26`
 
 ## Configuration Steps
-
 ### Configure Interfaces
 
 ```bash
@@ -52,7 +50,7 @@ object network INSIDE-NAT
 
 ### Create a route for the internal  network (I configured a static route)
 
-```
+```README.md
 route outside 0.0.0.0 0.0.0.0 192.168.122.0 1
 route inside 192.168.80.0 255.255.255.192 192.168.0.5 1
 route inside 192.168.80.64 255.255.255.192 192.168.0.5 1
@@ -70,7 +68,7 @@ show xlate
 ! Show running NAT config
 show run nat
 ```
-
+README.md
 ## 👨‍💻 AuthorCan you help me with some documentation so i can post in my GitHub account
 
 **Jesse Yankey**  
