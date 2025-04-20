@@ -11,7 +11,7 @@ Inside Network (192.168.0.4/31)Firewall
         |
 Outside Network (DHCP Assigned IP- Public)
 ```
-
+- **Enable Password**: `qwertY!!`
 - **Inside Interface**: `GigabitEthernet0/1`, IP: `192.168.0.4/31`
 - **Outside Interface**: `GigabitEthernet0/0`, IP: `DHCP Assigned IP`# Cisco ASA Firewall - PAT (Port Address Translation) Configuration
 
@@ -147,6 +147,7 @@ Inside Network (192.168.0.10/31)Firewall
 Outside Network (DHCP Assigned IP- Public)
 ```
 
+- **Login Details**: Username: `root`, password: `qwertY!!`
 - **Inside Interface**: `GigabitEthernet0/1`, IP: `192.168.0.10/31`
 - **Outside Interface**: `GigabitEthernet0/0`, IP: `DHCP Assigned IP`
 - **Internal Subnet**: `192.168.80.128/26`
